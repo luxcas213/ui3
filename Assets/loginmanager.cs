@@ -1,18 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class loginmanager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public InputField input;
+    public string contra = "juan";
+    
 
-    // Update is called once per frame
-    void Update()
+    public void check()
     {
-        
+        if (input.text == contra)
+        {
+            Debug.Log("acces si");
+        }
+        else
+        {
+            Debug.Log("acces no");
+        }
     }
 }
